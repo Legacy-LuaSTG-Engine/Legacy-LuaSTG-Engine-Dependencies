@@ -7,3 +7,9 @@
 [submodule "remote/freetype"]
 	path = remote/freetype
 	url = https://gitlab.freedesktop.org/freetype/freetype.git
+[submodule "remote/zlib"]
+	path = remote/zlib
+	url = https://github.com/madler/zlib.git
+[submodule "remote/libzip"]
+	path = remote/libzip
+	url = https://github.com/nih-at/libzip.git
