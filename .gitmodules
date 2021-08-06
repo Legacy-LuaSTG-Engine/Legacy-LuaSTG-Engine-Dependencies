@@ -4,3 +4,6 @@
 [submodule "remote/vorbis"]
 	path = remote/vorbis
 	url = https://github.com/xiph/vorbis.git
+[submodule "remote/freetype"]
+	path = remote/freetype
+	url = https://gitlab.freedesktop.org/freetype/freetype.git
