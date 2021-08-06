@@ -1,0 +1,6 @@
+[submodule "remote/ogg"]
+	path = remote/ogg
+	url = https://github.com/xiph/ogg.git
+[submodule "remote/vorbis"]
+	path = remote/vorbis
+	url = https://github.com/xiph/vorbis.git
