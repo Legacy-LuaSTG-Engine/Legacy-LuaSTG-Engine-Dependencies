@@ -35,21 +35,26 @@
 @cmake --build %root%\build\freetype --target %target_all%     --config Release
 @cmake --build %root%\build\freetype --target %target_install% --config Release
 
+@mkdir %root%\build\luajit
+@cmake -S %root%\cmake\luajit -B %root%\build\luajit --install-prefix %root%\install -G "Visual Studio 16 2019" -A x64
+@cmake --build %root%\build\luajit --target %target_all%     --config Release
+@cmake --build %root%\build\luajit --target %target_install% --config Release
+
 @setlocal
-    @cd %root%\remote\luajit\src
-    
-    @call .\msvcbuild.bat
-    
-    @cd %root%
-    
-    @copy /Y %root%\remote\luajit\src\luajit.exe %root%\install\bin\luajit.exe
-    @copy /Y %root%\remote\luajit\src\lua51.dll  %root%\install\bin\lua51.dll
-    @copy /Y %root%\remote\luajit\src\lua51.lib  %root%\install\lib\lua51.lib
-    
-    @copy /Y %root%\remote\luajit\src\lua.h     %root%\install\include\lua.h    
-    @copy /Y %root%\remote\luajit\src\lualib.h  %root%\install\include\lualib.h 
-    @copy /Y %root%\remote\luajit\src\lauxlib.h %root%\install\include\lauxlib.h
-    @copy /Y %root%\remote\luajit\src\luaconf.h %root%\install\include\luaconf.h
-    @copy /Y %root%\remote\luajit\src\lua.hpp   %root%\install\include\lua.hpp  
-    @copy /Y %root%\remote\luajit\src\luajit.h  %root%\install\include\luajit.h 
+::    @cd %root%\remote\luajit\src
+::    
+::    @call .\msvcbuild.bat
+::    
+::    @cd %root%
+::    
+::    @copy /Y %root%\remote\luajit\src\luajit.exe %root%\install\bin\luajit.exe
+::    @copy /Y %root%\remote\luajit\src\lua51.dll  %root%\install\bin\lua51.dll
+::    @copy /Y %root%\remote\luajit\src\lua51.lib  %root%\install\lib\lua51.lib
+::    
+::    @copy /Y %root%\remote\luajit\src\lua.h     %root%\install\include\lua.h    
+::    @copy /Y %root%\remote\luajit\src\lualib.h  %root%\install\include\lualib.h 
+::    @copy /Y %root%\remote\luajit\src\lauxlib.h %root%\install\include\lauxlib.h
+::    @copy /Y %root%\remote\luajit\src\luaconf.h %root%\install\include\luaconf.h
+::    @copy /Y %root%\remote\luajit\src\lua.hpp   %root%\install\include\lua.hpp  
+::    @copy /Y %root%\remote\luajit\src\luajit.h  %root%\install\include\luajit.h 
 @endlocal
