@@ -13,3 +13,6 @@
 [submodule "remote/libzip"]
 	path = remote/libzip
 	url = https://github.com/nih-at/libzip.git
+[submodule "remote/luajit"]
+	path = remote/luajit
+	url = https://github.com/LuaJIT/LuaJIT
