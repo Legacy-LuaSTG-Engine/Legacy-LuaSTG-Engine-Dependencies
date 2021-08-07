@@ -13,3 +13,9 @@
 [submodule "remote/libzip"]
 	path = remote/libzip
 	url = https://github.com/nih-at/libzip.git
+[submodule "remote/minizip-ng"]
+	path = remote/minizip-ng
+	url = https://github.com/zlib-ng/minizip-ng.git
+[submodule "remote/zlib-ng"]
+	path = remote/zlib-ng
+	url = https://github.com/zlib-ng/zlib-ng.git
